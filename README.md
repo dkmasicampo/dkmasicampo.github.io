@@ -195,15 +195,6 @@
       <p>This step-by-step instruction file will guide you through building your own racing cockpit. Designed for a cost-effective and ergonomic setup inspired by touring car driver positions.</p>
       <br />
       <button class="buy-button">Buy Now</button>
-
-      <!-- Inserted image under the Buy Now button, 20% smaller and left-aligned -->
-      <div style="margin-top: 20px;">
-        <img
-          src="https://i.imgur.com/uwQSjqm.png"
-          alt="Trusted Payment Logos"
-          style="width: 80%; height: auto;"
-        >
-      </div>
     </div>
   </div>
 
