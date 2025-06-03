@@ -4,84 +4,73 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Project Simulation</title>
+  <title>Product Showcase</title>
   <style>
     * {
       box-sizing: border-box;
+      margin: 0;
+      padding: 0;
     }
 
     body {
-      margin: 0;
       font-family: "Segoe UI", sans-serif;
-      background-color: #ffffff;
-      color: #333;
+      background-color: #f8f9fa;
+      color: #111;
     }
 
     header {
       background-color: #0a0a0a;
-      color: #fff;
-      padding: 60px 20px 30px;
+      color: white;
+      padding: 30px 20px;
       text-align: center;
     }
 
     header h1 {
       font-size: 2.2rem;
-      margin: 0;
+      margin-bottom: 10px;
     }
 
-    header p {
-      margin-top: 10px;
-      font-size: 1.1rem;
-      color: #ccc;
-    }
-
-    nav {
-      background-color: #1a1a1a;
-      text-align: center;
-      padding: 15px 0;
-    }
-
-    nav a {
-      color: #eee;
-      text-decoration: none;
-      margin: 0 20px;
-      font-weight: 500;
-      text-transform: uppercase;
-      font-size: 0.95rem;
-      display: inline-block;
-    }
-
-    nav a:hover {
-      color: #55ff99;
-    }
-
-    main {
-      display: flex;
-      flex-wrap: wrap;
-      max-width: 1100px;
+    .container {
+      max-width: 1200px;
       margin: 40px auto;
       padding: 0 20px;
+      display: flex;
+      flex-wrap: wrap;
       gap: 40px;
     }
 
-    .product-image {
-      flex: 1 1 400px;
-      text-align: center;
+    .gallery {
+      flex: 1 1 500px;
     }
 
-    .product-image img {
+    .main-image {
       width: 100%;
-      max-width: 400px;
-      aspect-ratio: 9 / 16;
-      object-fit: cover;
-      border: 1px solid #ddd;
+      height: 500px;
+      background-color: #ddd;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.1rem;
+      color: #777;
+      border: 1px solid #ccc;
+      margin-bottom: 15px;
     }
 
-    .below-image {
-      text-align: center;
-      margin-top: 10px;
-      font-weight: 600;
-      font-size: 1rem;
+    .thumbnail-row {
+      display: flex;
+      gap: 10px;
+    }
+
+    .thumbnail {
+      flex: 1;
+      height: 80px;
+      background-color: #eee;
+      border: 1px solid #bbb;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.9rem;
+      color: #555;
     }
 
     .product-info {
@@ -89,82 +78,84 @@
     }
 
     .product-info h2 {
-      font-size: 1.4rem;
-      font-weight: bold;
-      margin-bottom: 15px;
+      font-size: 1.8rem;
+      margin-bottom: 10px;
     }
 
-    .product-info p {
-      line-height: 1.7;
-      margin-bottom: 12px;
+    .price {
+      font-size: 1.3rem;
+      color: #00b386;
+      margin-bottom: 25px;
     }
 
-    .paypal-button {
-      margin-top: 25px;
-    }
-
-    .paypal-button input[type="submit"] {
+    .buy-button {
       background-color: #00b386;
-      color: #fff;
+      color: white;
       font-size: 1rem;
-      padding: 12px 24px;
+      padding: 12px 28px;
       border: none;
-      cursor: pointer;
       border-radius: 4px;
+      cursor: pointer;
       transition: background 0.3s ease;
     }
 
-    .paypal-button input[type="submit"]:hover {
+    .buy-button:hover {
       background-color: #009973;
     }
 
+    .tabs {
+      margin-top: 50px;
+      padding: 0 20px;
+      max-width: 1200px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .tab-header {
+      display: flex;
+      border-bottom: 2px solid #ccc;
+    }
+
+    .tab-header div {
+      padding: 12px 20px;
+      cursor: pointer;
+      font-weight: bold;
+      color: #333;
+    }
+
+    .tab-header div:hover {
+      background-color: #eee;
+    }
+
+    .tab-content {
+      padding: 20px 0;
+    }
+
     footer {
+      margin-top: 60px;
       background-color: #111;
       color: #ccc;
       text-align: center;
-      padding: 25px 10px;
-      margin-top: 60px;
+      padding: 30px 10px;
+      font-size: 0.9rem;
     }
 
-    footer a {
-      color: #55ff99;
-      margin: 0 12px;
-      text-decoration: none;
-      font-size: 0.95rem;
-    }
-
-    footer a:hover {
-      text-decoration: underline;
-    }
-
-    /* 📱 Mobile Optimization */
     @media (max-width: 768px) {
-      header h1 {
-        font-size: 1.8rem;
-      }
-
-      nav {
-        padding: 10px;
-      }
-
-      nav a {
-        display: block;
-        margin: 10px 0;
-      }
-
-      main {
+      .container {
         flex-direction: column;
-        padding: 0 15px;
         gap: 20px;
       }
 
-      .product-info {
-        padding-bottom: 20px;
+      .main-image {
+        height: 300px;
       }
 
-      .paypal-button input[type="submit"] {
-        width: 100%;
-        max-width: 300px;
+      .thumbnail {
+        height: 60px;
+      }
+
+      .product-info h2 {
+        font-size: 1.5rem;
       }
     }
   </style>
@@ -172,45 +163,43 @@
 <body>
 
   <header>
-    <h1>Project Simulation</h1>
-    <p>DIY Driving Simulation Blueprint Plans</p>
+    <h1>ProSIM GT1 Cockpit</h1>
+    <p>DIY Simulation Rig Blueprint</p>
   </header>
 
-  <nav>
-    <a href="#">Home</a>
-    <a href="#">F1 Cockpit</a>
-    <a href="#">DIY Service</a>
-  </nav>
-
-  <main>
-    <div class="product-image">
-      <img src="https://via.placeholder.com/400x711?text=ProSIM+GT1+Cockpit" alt="ProSIM GT1 Cockpit">
-      <div class="below-image">ProSIM GT1 Cockpit</div>
+  <div class="container">
+    <div class="gallery">
+      <div class="main-image">Main Product Image</div>
+      <div class="thumbnail-row">
+        <div class="thumbnail">Image 1</div>
+        <div class="thumbnail">Image 2</div>
+        <div class="thumbnail">Image 3</div>
+        <div class="thumbnail">Image 4</div>
+      </div>
     </div>
 
     <div class="product-info">
-      <h2>ProSIM GT1 Cockpit DIY Blueprint</h2>
-      <p>This step-by-step instruction file will guide you into building your very own racing cockpit. The ProSIM GT1 Cockpit is designed to simulate the most common touring car driving position.</p>
-      <p>The main goal of this blueprint is to provide you with the most cost-effective building method. The estimated cost of the building materials will be under $100–150 USD. Building tools are not included in this estimate.</p>
-
-      <div class="paypal-button">
-        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
-          <input type="hidden" name="cmd" value="_xclick">
-          <input type="hidden" name="business" value="youremail@example.com">
-          <input type="hidden" name="item_name" value="ProSIM GT1 Cockpit DIY Blueprint">
-          <input type="hidden" name="amount" value="19.95">
-          <input type="hidden" name="currency_code" value="USD">
-          <input type="submit" value="Buy Now – $19.95">
-        </form>
-      </div>
+      <h2>ProSIM GT1 DIY Blueprint</h2>
+      <div class="price">$19.95</div>
+      <p>This step-by-step instruction file will guide you through building your own racing cockpit. Designed for a cost-effective and ergonomic setup inspired by touring car driver positions.</p>
+      <br />
+      <button class="buy-button">Buy Now</button>
     </div>
-  </main>
+  </div>
+
+  <div class="tabs">
+    <div class="tab-header">
+      <div>Details</div>
+      <div>Specifications</div>
+      <div>Downloads</div>
+    </div>
+    <div class="tab-content">
+      <p>Placeholder content for the selected tab. Add full product information, measurements, downloadable files, or customer support links here.</p>
+    </div>
+  </div>
 
   <footer>
-    <a href="#">Contact Us</a> |
-    <a href="#">About Us</a> |
-    <a href="#">YouTube</a> |
-    <a href="#">Forum</a>
+    &copy; 2025 ProSIM. All rights reserved. | <a href="#" style="color:#55ff99;">Contact</a>
   </footer>
 
 </body>
