@@ -50,10 +50,10 @@
       border: 1px solid #ccc;
       margin-bottom: 15px;
       overflow: hidden;
-      background-color: #ddd; /* fallback in case image fails */
+      background-color: #ddd; /* fallback if image fails */
     }
 
-    /* Make the <img> fill its parent */
+    /* This img will fill its parent container */
     .main-image img {
       position: absolute;
       top: 0;
@@ -176,9 +176,9 @@
 
   <div class="container">
     <div class="gallery">
-      <!-- Main Product Image with an <img> tag -->
+      <!-- Main Product Image now points to the provided JPEG file -->
       <div class="main-image">
-        <img src="path/to/your-image.jpg" alt="ProSIM GT1 Cockpit">
+        <img src="/mnt/data/5KjaPtN.jpeg" alt="ProSIM GT1 Cockpit">
       </div>
 
       <div class="thumbnail-row">
