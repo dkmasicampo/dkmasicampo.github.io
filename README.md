@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Product Showcase</title>
   <style>
+    /* Reset & Base Styles */
     * {
       box-sizing: border-box;
       margin: 0;
@@ -43,16 +44,23 @@
     }
 
     .main-image {
+      position: relative;
       width: 100%;
       height: 500px;
-      background-color: #ddd;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 1.1rem;
-      color: #777;
       border: 1px solid #ccc;
       margin-bottom: 15px;
+      overflow: hidden;
+      background-color: #ddd; /* fallback in case image fails */
+    }
+
+    /* Make the <img> fill its parent */
+    .main-image img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
     }
 
     .thumbnail-row {
@@ -168,7 +176,11 @@
 
   <div class="container">
     <div class="gallery">
-      <div class="main-image">Main Product Image</div>
+      <!-- Main Product Image with an <img> tag -->
+      <div class="main-image">
+        <img src="path/to/your-image.jpg" alt="ProSIM GT1 Cockpit">
+      </div>
+
       <div class="thumbnail-row">
         <div class="thumbnail">Image 1</div>
         <div class="thumbnail">Image 2</div>
