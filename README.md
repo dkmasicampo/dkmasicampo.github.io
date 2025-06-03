@@ -217,3 +217,70 @@
         </li>
         <li class="trusted-payment-badge">
           <svg version="1.1" xmlns="http://www.w3.org/2000/svg" role="img" x="0" y="0" width="38" height="24" viewBox="0 0 165.521 105.965" xml:space="preserve" aria-labelledby="pi-apple_pay"><title id="pi-apple_pay">Apple Pay</title><path fill="#000" d="M150.698 0H14.823c-.566 0-1.133 0-1.698.003-.477.004-.953.009-1.43.022-1.039.028-2.087.09-3.113.274a10.51 10.51 0 0 0-2.958.975 9.932 9.932 0 0 0-4.35 4.35 10.463 10.463 0 0 0-.975 2.96C.113 9.611.052 10.658.024 11.696a70.22 70.22 0 0 0-.022 1.43C0 13.69 0 14.256 0 14.823v76.318c0 .567 0 1.132.002 1.699.003.476.009.953.022 1.43.028 1.036.09 2.084.275 3.11a10.46 10.46 0 0 0 .974 2.96 9.897 9.897 0 0 0 1.83 2.52 9.874 9.874 0 0 0 2.52 1.83c.947.483 1.917.79 2.96.977 1.025.183 2.073.245 3.112.273.477.011.953.017 1.43.02.565.004 1.132.004 1.698.004h135.875c.565 0 1.132 0 1.697-.004.476-.002.952-.009 1.431-.02 1.037-.028 2.085-.09 3.113-.273a10.478 10.478 0 0 0 2.958-.977 9.955 9.955 0 0 0 4.35-4.35c.483-.947.789-1.917.974-2.96.186-1.026.246-2.074.274-3.11.013-.477.02-.954.022-1.43.004-.567.004-1.132.004-1.699V14.824c0-.567 0-1.133-.004-1.699a63.067 63.067 0 0 0-.022-1.429c-.028-1.038-.088-2.085-.274-3.112a10.4 10.4 0 0 0-.974-2.96 9.94 9.94 0 0 0-4.35-4.35A10.52 10.52 0 0 0 156.939.3c-1.028-.185-2.076-.246-3.113-.274a71.417 71.417
+<!-- …assume this is inside your .product-info or wherever “Brand”/“Availability” live… -->
+<div class="product-meta">
+  <p><strong>Brand:</strong> RSEAT</p>
+  <p><strong>Availability:</strong> In stock</p>
+
+  <!-- ↓↓↓ Insert trusted payment‐method logos here ↓↓↓ -->
+  <ul class="list-unstyled trusted-payment-badges flex flex-wrap mt-4">
+    <li class="trusted-payment-badge">
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/0/04/Visa.svg"
+        alt="Visa"
+        width="38"
+        height="24"
+      />
+    </li>
+    <li class="trusted-payment-badge">
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/0/0e/Mastercard-logo.svg"
+        alt="Mastercard"
+        width="38"
+        height="24"
+      />
+    </li>
+    <li class="trusted-payment-badge">
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/3/30/American_Express_logo.svg"
+        alt="American Express"
+        width="38"
+        height="24"
+      />
+    </li>
+    <li class="trusted-payment-badge">
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/b/b5/PayPal.svg"
+        alt="PayPal"
+        width="38"
+        height="24"
+      />
+    </li>
+    <li class="trusted-payment-badge">
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/2/2d/Apple_Pay_Logo.svg"
+        alt="Apple Pay"
+        width="38"
+        height="24"
+      />
+    </li>
+    <li class="trusted-payment-badge">
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Google_Pay_Logo.svg"
+        alt="Google Pay"
+        width="38"
+        height="24"
+      />
+    </li>
+    <li class="trusted-payment-badge">
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/c/c2/Shop_Pay_Logo.svg"
+        alt="Shop Pay"
+        width="38"
+        height="24"
+      />
+    </li>
+  </ul>
+  <!-- ↑↑↑ end of trusted payment‐method logos ↓↓↓ -->
+</div>
+<!-- …rest of your markup… -->
