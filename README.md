@@ -110,20 +110,6 @@
       background-color: #009973;
     }
 
-    /* Style for trusted payment badges container */
-    .trusted-payment-badges {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 12px;
-      margin-top: 20px;
-      padding-left: 0;
-    }
-    .trusted-payment-badge {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-    }
-
     .tabs {
       margin-top: 50px;
       padding: 0 20px;
@@ -190,7 +176,7 @@
 
   <div class="container">
     <div class="gallery">
-      <!-- Main Product Image -->
+      <!-- Main Product Image using the provided Imgur link -->
       <div class="main-image">
         <img src="https://i.imgur.com/5KjaPtN.jpeg" alt="ProSIM GT1 Cockpit">
       </div>
@@ -209,78 +195,23 @@
       <p>This step-by-step instruction file will guide you through building your own racing cockpit. Designed for a cost-effective and ergonomic setup inspired by touring car driver positions.</p>
       <br />
       <button class="buy-button">Buy Now</button>
+    </div>
+  </div>
 
-      <!-- Trusted Payment Badges -->
-      <ul class="list-unstyled trusted-payment-badges flex flex-wrap">
-        <li class="trusted-payment-badge">
-          <svg xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="pi-american_express" viewBox="0 0 38 24" width="38" height="24"><title id="pi-american_express">American Express</title><path fill="#000" d="M35 0H3C1.3 0 0 1.3 0 3v18c0 1.7 1.4 3 3 3h32c1.7 0 3-1.3 3-3V3c0-1.7-1.4-3-3-3Z" opacity=".07"></path><path fill="#006FCF" d="M35 1c1.1 0 2 .9 2 2v18c0 1.1-.9 2-2 2H3c-1.1 0-2-.9-2-2V3c0-1.1.9-2 2-2h32Z"></path><path fill="#FFF" d="M22.012 19.936v-8.421L37 11.528v2.326l-1.732 1.852L37 17.573v2.375h-2.766l-1.47-1.622-1.46 1.628-9.292-.02Z"></path><path fill="#006FCF" d="M23.013 19.012v-6.57h5.572v1.513h-3.768v1.028h3.678v1.488h-3.678v1.01h3.768v1.531h-5.572Z"></path><path fill="#006FCF" d="m28.557 19.012 3.083-3.289-3.083-3.282h2.386l1.884 2.083 1.89-2.082H37v.051l-3.017 3.23L37 18.92v.093h-2.307l-1.917-2.103-1.898 2.104h-2.321Z"></path><path fill="#FFF" d="M22.71 4.04h3.614l1.269 2.881V4.04h4.46l.77 2.159.771-2.159H37v8.421H19l3.71-8.421Z"></path><path fill="#006FCF" d="m23.395 4.955-2.916 6.566h2l.55-1.315h2.98l.55 1.315h2.05l-2.904-6.566h-2.31Zm.25 3.777.875-2.09.873 2.09h-1.748Z"></path><path fill="#006FCF" d="M28.581 11.52V4.953l2.811.01L32.84 9l1.456-4.046H37v6.565l-1.74.016v-4.51l-1.644 4.494h-1.59L30.35 7.01v4.51h-1.768Z"></path></svg>
-        </li>
-        <li class="trusted-payment-badge">
-          <svg version="1.1" xmlns="http://www.w3.org/2000/svg" role="img" x="0" y="0" width="38" height="24" viewBox="0 0 165.521 105.965" xml:space="preserve" aria-labelledby="pi-apple_pay"><title id="pi-apple_pay">Apple Pay</title><path fill="#000" d="M150.698 0H14.823c-.566 0-1.133 0-1.698.003-.477.004-.953.009-1.43.022-1.039.028-2.087.09-3.113.274a10.51 10.51 0 0 0-2.958.975 9.932 9.932 0 0 0-4.35 4.35 10.463 10.463 0 0 0-.975 2.96C.113 9.611.052 10.658.024 11.696a70.22 70.22 0 0 0-.022 1.43C0 13.69 0 14.256 0 14.823v76.318c0 .567 0 1.132.002 1.699.003.476.009.953.022 1.43.028 1.036.09 2.084.275 3.11a10.46 10.46 0 0 0 .974 2.96 9.897 9.897 0 0 0 1.83 2.52 9.874 9.874 0 0 0 2.52 1.83c.947.483 1.917.79 2.96.977 1.025.183 2.073.245 3.112.273.477.011.953.017 1.43.02.565.004 1.132.004 1.698.004h135.875c.565 0 1.132 0 1.697-.004.476-.002.952-.009 1.431-.02 1.037-.028 2.085-.09 3.113-.273a10.478 10.478 0 0 0 2.958-.977 9.955 9.955 0 0 0 4.35-4.35c.483-.947.789-1.917.974-2.96.186-1.026.246-2.074.274-3.11.013-.477.02-.954.022-1.43.004-.567.004-1.132.004-1.699V14.824c0-.567 0-1.133-.004-1.699a63.067 63.067 0 0 0-.022-1.429c-.028-1.038-.088-2.085-.274-3.112a10.4 10.4 0 0 0-.974-2.96 9.94 9.94 0 0 0-4.35-4.35A10.52 10.52 0 0 0 156.939.3c-1.028-.185-2.076-.246-3.113-.274a71.417 71.417
-<!-- …assume this is inside your .product-info or wherever “Brand”/“Availability” live… -->
-<div class="product-meta">
-  <p><strong>Brand:</strong> RSEAT</p>
-  <p><strong>Availability:</strong> In stock</p>
+  <div class="tabs">
+    <div class="tab-header">
+      <div>Details</div>
+      <div>Specifications</div>
+      <div>Downloads</div>
+    </div>
+    <div class="tab-content">
+      <p>Placeholder content for the selected tab. Add full product information, measurements, downloadable files, or customer support links here.</p>
+    </div>
+  </div>
 
-  <!-- ↓↓↓ Insert trusted payment‐method logos here ↓↓↓ -->
-  <ul class="list-unstyled trusted-payment-badges flex flex-wrap mt-4">
-    <li class="trusted-payment-badge">
-      <img
-        src="https://upload.wikimedia.org/wikipedia/commons/0/04/Visa.svg"
-        alt="Visa"
-        width="38"
-        height="24"
-      />
-    </li>
-    <li class="trusted-payment-badge">
-      <img
-        src="https://upload.wikimedia.org/wikipedia/commons/0/0e/Mastercard-logo.svg"
-        alt="Mastercard"
-        width="38"
-        height="24"
-      />
-    </li>
-    <li class="trusted-payment-badge">
-      <img
-        src="https://upload.wikimedia.org/wikipedia/commons/3/30/American_Express_logo.svg"
-        alt="American Express"
-        width="38"
-        height="24"
-      />
-    </li>
-    <li class="trusted-payment-badge">
-      <img
-        src="https://upload.wikimedia.org/wikipedia/commons/b/b5/PayPal.svg"
-        alt="PayPal"
-        width="38"
-        height="24"
-      />
-    </li>
-    <li class="trusted-payment-badge">
-      <img
-        src="https://upload.wikimedia.org/wikipedia/commons/2/2d/Apple_Pay_Logo.svg"
-        alt="Apple Pay"
-        width="38"
-        height="24"
-      />
-    </li>
-    <li class="trusted-payment-badge">
-      <img
-        src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Google_Pay_Logo.svg"
-        alt="Google Pay"
-        width="38"
-        height="24"
-      />
-    </li>
-    <li class="trusted-payment-badge">
-      <img
-        src="https://upload.wikimedia.org/wikipedia/commons/c/c2/Shop_Pay_Logo.svg"
-        alt="Shop Pay"
-        width="38"
-        height="24"
-      />
-    </li>
-  </ul>
-  <!-- ↑↑↑ end of trusted payment‐method logos ↓↓↓ -->
-</div>
-<!-- …rest of your markup… -->
+  <footer>
+    &copy; 2025 ProSIM. All rights reserved. | <a href="#" style="color:#55ff99;">Contact</a>
+  </footer>
+
+</body>
+</html>
