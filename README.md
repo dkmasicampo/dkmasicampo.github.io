@@ -176,9 +176,9 @@
 
   <div class="container">
     <div class="gallery">
-      <!-- Main Product Image now points to the provided JPEG file -->
+      <!-- Main Product Image using the provided Imgur link -->
       <div class="main-image">
-        <img src="/mnt/data/5KjaPtN.jpeg" alt="ProSIM GT1 Cockpit">
+        <img src="https://i.imgur.com/5KjaPtN.jpeg" alt="ProSIM GT1 Cockpit">
       </div>
 
       <div class="thumbnail-row">
