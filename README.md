@@ -197,7 +197,7 @@
 
       <!-- Inserted image under the Buy Now button -->
       <div style="margin-top: 20px;">
-        <img src="https://github.com/dkmasicampo/dkmasicampo.github.io/blob/main/trusted%20payment%20types.png?raw=true" alt="Trusted Payment Logos" style="max-width: 25%; height: auto;">
+        <img src="https://github.com/dkmasicampo/dkmasicampo.github.io/blob/main/trusted%20payment%20types.png?raw=true" alt="Trusted Payment Logos" style="max-width: 50%; height: auto;">
       </div>
     </div>
   </div>
