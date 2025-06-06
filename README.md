@@ -197,7 +197,7 @@
       <button class="buy-button">Buy Now</button>
 
       <!-- Inserted image under the Buy Now button -->
-      <div style="margin-top: 20px; text-align: center;">
+      <div style="margin-top: 20px;">
         <img src="https://i.imgur.com/uwQSjqm.png" alt="Trusted Payment Logos" style="max-width: 100%; height: auto;">
       </div>
     </div>
