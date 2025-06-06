@@ -14,7 +14,6 @@
 
     body {
       font-family: "Segoe UI", sans-serif;
-      background-color: #f8f9fa;
       color: #111;
     }
 
